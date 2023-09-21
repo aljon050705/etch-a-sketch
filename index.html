@@ -7,10 +7,27 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    Left Click to Paint<br>
-    Alt + Left Click to Erase
-    <div class="canvas">
+    <header>
+        <p>Paint Tool (TOP Etch-a-Sketch)</p>
+    </header>
+    <div class="interface">
+        <div class="interface-left">
+            <button class="clear-grid-button">Clear Grid</button>
+            <button class="fill-grid-button">Fill Grid</button>
+            <input id="gridSizeInput" type="number" max="128" placeholder="Grid Size">
+            <input id="paintColor" type="color">
+        </div>
+        <div class="canvas">
+        </div>
+        <div class="interface-right">
+            <p>Left Click to Paint</p>
+            <p>Alt + Left Click to Erase</p>
+        </div>
     </div>
+    
+    <footer>Copyright &copy;2023 aljon050705&nbsp;<a href="https://github.com/aljon050705" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" class="github-icon"></a>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
